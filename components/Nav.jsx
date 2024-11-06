@@ -33,7 +33,16 @@ const Nav = () => {
   };
 
   return (
-    <nav className=" flex justify-between w-full p-2 sm:p-3 lg:p-5 fixed z-20">
+    <motion.nav
+      className=" flex justify-between w-full p-2 sm:p-3 lg:p-5 fixed z-20"
+      initial={{ y: "-100vh" }}
+      animate={{ y: 0 }}
+      transition={{
+        delay: 3,
+        duration: 1.5,
+        ease: "easeOut",
+      }}
+    >
       <h1 className="text-xl sm:text-2xl lg:text-3xl font-medium">
         SHUTTERSAGA STUDIOS
       </h1>
@@ -75,7 +84,7 @@ const Nav = () => {
           ))}
         </ul>
       </motion.div>
-    </nav>
+    </motion.nav>
   );
 };
 

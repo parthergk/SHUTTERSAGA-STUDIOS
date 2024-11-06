@@ -27,14 +27,8 @@ const Preloader = ({ onLoadingComplete }) => {
   if (!isLoading) return null;
 
   return (
-    <div className="fixed inset-0 bg-white z-50 flex flex-col items-center justify-center">
-      <div className="w-52 h-2.5 bg-gray-100 rounded-full overflow-hidden mb-2.5">
-        <div 
-          className="h-full bg-green-500 transition-all duration-100 ease-in-out"
-          style={{ width: `${progress}%` }}
-        />
-      </div>
-      <div className="font-sans text-lg text-gray-700">
+    <div className="fixed inset-0 bg-EerieBlack z-50 flex flex-col items-center justify-center">
+      <div className="font-sans text-lg text-white text-12xl">
         {progress}%
       </div>
     </div>
