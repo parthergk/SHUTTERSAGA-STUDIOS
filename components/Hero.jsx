@@ -14,7 +14,6 @@ const Hero = () => {
   return (
     <div className="w-full h-screen overflow-hidden">
       <div className="w-screen h-screen fixed top-0 left-0 z-0">
-        {/* Background video */}
         <video
           className="w-screen h-screen object-cover"
           width="1280"
@@ -25,7 +24,7 @@ const Hero = () => {
           muted
           preload="none"
         >
-          <source src="/video/main.mp4" type="video/mp4" />
+          <source src="/video/main.webm" type="video/webm" />
           Your browser does not support the video tag.
         </video>
       </div>
