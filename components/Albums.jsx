@@ -2,7 +2,6 @@
 import Image from "next/image";
 const Albums = () => {
 
-  // Array of images for the right column
   const imagesColumn1 = [
     { src: "/image/c.jpg", height: 233.45, width: 350 },
     { src: "/image/d.jpg", height: 449.95, width: 300 },
